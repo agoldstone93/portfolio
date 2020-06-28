@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+
+body {
+	padding: 1.5em 0 4em 0;
+	background-color: #fff3e0;
+	font-family: "Jost", sans-serif;
+}
+.container {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+}
+.content {
+	grid-column: 2/7;
+}
+.intro {
+	margin: 1em;
+	border-bottom: 1px solid #ccc0ae;
+}
+@media only screen and (min-width: 1100px) {
+	.project-container {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: repeat(2, 270px);
+	}
+}
+@media only screen and (max-width: 1100px) {
+	.project-container {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+@media only screen and (max-width: 800px) {
+	.project-container {
+		grid-template-columns: 1fr;
+	}
+}
+.project-container {
+	display: grid;
+}
+a {
+	color: black;
+	text-decoration: none;
+}
+.project-item {
+	border: 1px solid #ccc0ae;
+	margin: 1em;
+	padding: 0.5em;
+	border-radius: 3px;
+}
+.project-item:hover {
+	transform: translate(0px, 1px);
+	transition-duration: 0.3s;
+	box-shadow: 0px 1px 5px #c2c2c2;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section-heading {
+	margin: 0.7em;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.projects-container {
+	display: grid;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.course-container {
+	margin: 1em;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.course-item:hover {
+	color: #ccc0ae;
+	transition-duration: 0.3s;
 }
