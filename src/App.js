@@ -1,3 +1,7 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './App.css';
+
 const projectsData = [
 	{
 		id: 5,
@@ -153,3 +157,5 @@ function Course(props) {
 }
 
 ReactDOM.render(<App />, document.getElementById("root"));
+
+export default App
