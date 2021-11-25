@@ -1,5 +1,13 @@
 export default [
     {
+        id: 2,
+        title: "Junior .NET Developer",
+        company: "Great Places",
+        startDate: "Nov 2021",
+        endDate: "Present",
+        description: ``
+    },
+    {
         id: 1,
         title: "Apprentice Software Developer",
         company: "Trafford Housing Trust",
@@ -15,5 +23,5 @@ export default [
             - completing my apprentice activities, which contribute to my portfolio, one day a week.
             - attending 6 weeks of classroom teaching delivered throughout the apprenticeship and
             completing self-led apprentice work one day per week.`
-    }
+    },
 ]

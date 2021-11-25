@@ -47,7 +47,7 @@ export default function App() {
 		<div className="container">
 			<div className="content">
 				<Header />
-				<h2>Work Experience</h2>
+				<h2>Software Development Work Experience</h2>
 				{workExperienceComponents}
 				<h2>Web Projects</h2>
 				<div className="project-container">{projectComponents}</div>
