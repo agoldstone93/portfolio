@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './App.css';
 
+import Header from './components/Header';
 import Course from './components/Course';
 import Project from './components/Project';
 
@@ -32,13 +33,7 @@ export default function App() {
 	return (
 		<div class="container">
 			<div class="content">
-				<div class="intro">
-					<h1>Adam Goldstone</h1>
-					<p>
-						I am a self taught programmer with experience using HTML, CSS, JavaScript,
-						React and C.
-					</p>
-				</div>
+				<Header />
 				<h2 class="section-heading">Web Projects</h2>
 				<div class="project-container">{projectComponents}</div>
 				<h2 class="section-heading">Algorithm Scripting Projects</h2>
