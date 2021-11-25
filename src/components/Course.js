@@ -1,9 +1,10 @@
 import React from "react";
+import './Course.css'
 
 export default function Course(props) {
 	return (
 		<p>
-			<a href={props.url} target="_blank" rel="noopener noreferrer" class="course-item">
+			<a href={props.url} target="_blank" rel="noopener noreferrer" className="course-item">
 				{props.name}
 			</a>
 		</p>

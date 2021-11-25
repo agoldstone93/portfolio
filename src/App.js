@@ -31,15 +31,15 @@ export default function App() {
 		<Course key={course.id} name={course.name} url={course.url} />
 	));
 	return (
-		<div class="container">
-			<div class="content">
+		<div className="container">
+			<div className="content">
 				<Header />
-				<h2 class="section-heading">Web Projects</h2>
-				<div class="project-container">{projectComponents}</div>
-				<h2 class="section-heading">Algorithm Scripting Projects</h2>
-				<div class="project-container">{algorithmComponents}</div>
-				<h2 class="section-heading">Courses Completed</h2>
-				<div class="course-container">{coursesComponents}</div>
+				<h2>Web Projects</h2>
+				<div className="project-container">{projectComponents}</div>
+				<h2>Algorithm Scripting Projects</h2>
+				<div className="project-container">{algorithmComponents}</div>
+				<h2 className="section-heading">Courses Completed</h2>
+				<div>{coursesComponents}</div>
 			</div>
 		</div>
 	);
