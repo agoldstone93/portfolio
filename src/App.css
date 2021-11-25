@@ -16,6 +16,13 @@ main {
 
 a {
 	color: black;
-	text-decoration: none;
+	text-decoration-color: transparent;
+	
 }
 
+a:hover {
+	text-decoration: underline;
+	text-decoration-color: orangered;
+	text-underline-offset: 2px;
+	transition-duration: 0.5s;
+}

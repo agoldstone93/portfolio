@@ -1,5 +1,4 @@
 import React from "react";
-import './Course.css'
 
 export default function Course(props) {
 	return (

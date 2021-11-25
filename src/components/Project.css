@@ -1,7 +1,7 @@
 @media only screen and (min-width: 1100px) {
 	.project-container {
 		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: repeat(2, 270px);
+		grid-template-rows: repeat(2, auto);
 	}
 }
 @media only screen and (max-width: 1100px) {
@@ -18,21 +18,4 @@
 .project-container {
 	display: grid;
     gap: 15px;
-}
-
-.project-item {
-	/* border: 1px solid #ccc0ae;
-	padding: 0.5em;
-	border-radius: 3px; */
-}
-
-.project-item:hover {
-	/* transform: translate(0px, 1px);
-	transition-duration: 0.3s;
-	box-shadow: 0px 1px 5px #c2c2c2; */
-	transition-duration: 0.3s;
-	text-decoration: underline;
-}
-
-.project-header {
 }
