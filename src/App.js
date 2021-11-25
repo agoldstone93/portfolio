@@ -5,10 +5,12 @@ import './App.css';
 import Header from './components/Header';
 import Course from './components/Course';
 import Project from './components/Project';
+import WorkExperience from './components/WorkExperience';
 
 import projectsData from './data/projectsData';
 import algorithmData from './data/algorithmData';
 import coursesCompleted from './data/coursesCompleted';
+import workExperienceData from './data/workExperienceData';
 
 export default function App() {
 	const projectComponents = projectsData.map((project) => (
@@ -27,6 +29,17 @@ export default function App() {
 			url={project.url}
 		/>
 	));
+
+	const workExperienceComponents = workExperienceData.map(job => [
+		<WorkExperience 
+			key={job.id} 
+			title={job.title}
+			company={job.company}
+			startDate={job.startDate} 
+			endDate={job.endDate} 
+			description={job.description} />
+	])
+
 	const coursesComponents = coursesCompleted.map((course) => (
 		<Course key={course.id} name={course.name} url={course.url} />
 	));
@@ -34,6 +47,8 @@ export default function App() {
 		<div className="container">
 			<div className="content">
 				<Header />
+				<h2>Work Experience</h2>
+				{workExperienceComponents}
 				<h2>Web Projects</h2>
 				<div className="project-container">{projectComponents}</div>
 				<h2>Algorithm Scripting Projects</h2>

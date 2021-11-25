@@ -1,11 +1,12 @@
 import React from "react";
 
-export default function WorkExperience() {
+export default function WorkExperience(props) {
     return (
         <div>
-            <h3>Job</h3>
-            <h4>Nov 2021</h4>
-            <p>Experience</p>
+            <h3>{props.title}</h3>
+            <h4>{props.company}</h4>
+            <h5>{props.startDate} - {props.endDate}</h5>
+            <p>{props.description}</p>
         </div>
     )
 }

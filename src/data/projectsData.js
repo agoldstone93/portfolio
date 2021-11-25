@@ -40,5 +40,5 @@ export default [
 		description:
 			"This is a basic survey form which allows users to enter information about themselves.",
 		url: "https://codepen.io/amg93/full/qBdEQNJ"
-	}
+	},
 ];
