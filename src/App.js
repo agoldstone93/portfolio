@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './App.css';
 
 import Header from './components/Header';
+import Profile from './components/Profile';
 import Course from './components/Course';
 import Project from './components/Project';
 
@@ -32,15 +33,17 @@ export default function App() {
 	));
 	return (
 		<div className="container">
-			<div className="content">
+			<main className="content">
 				<Header />
-				<h2>Web Projects</h2>
+				<h2 id='profile'>Profile</h2>
+				<Profile />
+				<h2 id='projects'>Web Projects</h2>
 				<div className="project-container">{projectComponents}</div>
 				<h2>Algorithm Scripting Projects</h2>
 				<div className="project-container">{algorithmComponents}</div>
-				<h2 className="section-heading">Courses Completed</h2>
+				<h2 id='courses' className="section-heading">Courses Completed</h2>
 				<div>{coursesComponents}</div>
-			</div>
+			</main>
 		</div>
 	);
 }
