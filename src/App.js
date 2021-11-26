@@ -18,6 +18,7 @@ export default function App() {
 			name={project.name}
 			description={project.description}
 			url={project.url}
+			tags={project.tags}
 		/>
 	));
 	const algorithmComponents = algorithmData.map((project) => (
@@ -26,6 +27,7 @@ export default function App() {
 			name={project.name}
 			description={project.description}
 			url={project.url}
+			tags={project.tags}
 		/>
 	));
 	const coursesComponents = coursesCompleted.map((course) => (
