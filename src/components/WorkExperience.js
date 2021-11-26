@@ -2,7 +2,7 @@ import React from "react";
 import './WorkExperience.css'
 
 export default function WorkExperience(props) {
-    const descriptionElements = props.description.map(item => <li>{item}</li>)
+    const descriptionElements = props.description.map(item => <li key={item}>{item}</li>)
     return (
         <div>
             <h3 className='title'>{props.title}</h3>

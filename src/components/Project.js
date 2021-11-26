@@ -2,7 +2,7 @@ import React from "react";
 import './Project.css'
 
 export default function Project(props) {
-	const tags = props.tags.map(tag => <div className='tag'>{tag}</div>)
+	const tags = props.tags.map(tag => <div key={tag} className='tag'>{tag}</div>)
 	return (
 		<div className='project-section'>
 			<a className="project-item" href={props.url} target="_blank" rel="noopener noreferrer">
