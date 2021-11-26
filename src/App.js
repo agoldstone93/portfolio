@@ -36,7 +36,7 @@ export default function App() {
 			title={job.title}
 			company={job.company}
 			startDate={job.startDate} 
-			endDate={job.endDate} 
+			endDate={job.endDate}
 			description={job.description} />
 	])
 
