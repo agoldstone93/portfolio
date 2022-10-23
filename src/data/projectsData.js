@@ -6,7 +6,7 @@ export default [
 			`I created a web app which allows a user to type in plain text. The app will convert 
 			it into markdown styled text.`,
 		url: "https://codepen.io/amg93/full/MWKpJME",
-		tags: ['Markdown']
+		tags: ['Markdown', 'React']
 	},
 	{
 		id: 4,
@@ -23,7 +23,7 @@ export default [
 		description:
 			`I built a simple JavaScript program to check if a string is a palindrome.`,
 		url: "https://repl.it/@agoldstone93/PalindromeChecker",
-		tags: ['Javascript']
+		tags: ['JavaScript']
 	},
 	{
 		id: 3,
@@ -41,7 +41,7 @@ export default [
 			`This is an example product landing page. It contains an embedded video and information 
 			laid out clearly.`,
 		url: "https://codepen.io/amg93/full/abOXzQL",
-		tags: []
+		tags: ['HTML', 'CSS']
 	},
 	{
 		id: 1,
@@ -49,6 +49,6 @@ export default [
 		description:
 			`This is a basic survey form which allows users to enter information about themselves.`,
 		url: "https://codepen.io/amg93/full/qBdEQNJ",
-		tags: []
+		tags: ['HTML', 'CSS']
 	}
 ];

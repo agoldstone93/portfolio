@@ -40,7 +40,8 @@ export default function App() {
 			company={job.company}
 			startDate={job.startDate} 
 			endDate={job.endDate}
-			description={job.description} />
+			description={job.description}
+			technologies={job.technologies} />
 	])
 
 	const coursesComponents = coursesCompleted.map((course) => (
@@ -50,16 +51,26 @@ export default function App() {
 		<div className="container">
 			<main className="content">
 				<Header />
-				<h2 id='profile'>Profile</h2>
-				<Profile />
-				<h2>Software Development Work Experience</h2>
-				{workExperienceComponents}
-				<h2 id='projects'>Web Projects</h2>
-				<div className="project-container">{projectComponents}</div>
-				<h2>Algorithm Scripting Projects</h2>
-				<div className="project-container">{algorithmComponents}</div>
-				<h2 id='courses' className="section-heading">Courses Completed</h2>
-				<div>{coursesComponents}</div>
+				<section>
+					<h2 id='profile'>Profile</h2>
+					<Profile />
+				</section>
+				<section>
+					<h2>Software Development Work Experience</h2>
+					{workExperienceComponents}
+				</section>
+				<section>
+					<h2 id='projects'>Web Projects</h2>
+					<div className="project-container">{projectComponents}</div>
+				</section>
+				<section>
+					<h2>Algorithm Scripting Projects</h2>
+					<div className="project-container">{algorithmComponents}</div>
+				</section>
+				<section className='last-section'>
+					<h2 id='courses' className="section-heading">Courses Completed</h2>
+					<div>{coursesComponents}</div>
+				</section>
 			</main>
 		</div>
 	);

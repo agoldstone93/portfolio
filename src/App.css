@@ -26,3 +26,12 @@ a:hover {
 	text-underline-offset: 2px;
 	transition-duration: 0.5s;
 }
+
+section {
+	padding: 20px 0;
+	border-bottom: 1px solid black;
+}
+
+.last-section {
+	border: none;
+}

@@ -9,7 +9,8 @@ export default function Header() {
                 <li><a href='#profile'>Profile</a></li>
                 <li><a href='#projects'>Projects</a></li>
                 <li><a href='#courses'>Certifications</a></li>
-                <li>Blog</li>
+                <li><a href='https://github.com/agoldstone93' target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                {/* <li>Blog</li> */}
             </ul>
         </div>
     )
