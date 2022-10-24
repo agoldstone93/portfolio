@@ -35,3 +35,9 @@ section {
 .last-section {
 	border: none;
 }
+
+@media screen and (max-width: 840px) {
+	main {
+		padding: 10vw;
+	}
+}

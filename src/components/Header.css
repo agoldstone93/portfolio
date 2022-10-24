@@ -20,6 +20,12 @@
 	margin-left: auto;
 }
 
+@media screen and (max-width: 650px) {
+	.menu {
+		display: none;
+	}
+}
+
 .menu > li {
 	padding-left: 40px;
 }
